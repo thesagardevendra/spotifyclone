@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="toptucker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Top Tucker</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div><a href="spotifyweb.html"><img src="Spotifyweb.png"></a></div>
+        <div>&nbsp;&nbsp;<i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;Home</div>
+        <div>&nbsp;&nbsp;<i class="fa  fa-search  fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;Search</div>
+        <div>&nbsp;&nbsp;<i class="fa  fa-book  fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;Your Library</div>
+        <br>
+        <div>&nbsp;&nbsp;<i class="fa fa-plus-square fa-lg">&nbsp;&nbsp;&nbsp;&nbsp;</i>Create Playlists</div>
+        <div>&nbsp;&nbsp;<i class="fa fa-heart fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;Liked Songs</div>
+
+    </div>
+
+
+    <div class="mainbar1">
+        <a><img src="toptucker.jpg" width="260" style="box-shadow: 0px 0px 20px 5px black;"></a>
+    </div>
+
+    <div class="info">
+
+        <div style="color:whitesmoke; font-weight: 750;">Top Tucker</div>
+        <div><a href="yuvan.html" style="font-weight: 600;">Yuvan Shankar Raja .</a>
+            <a href="badshah.html" style="font-weight: 600;">Badshah</a>
+            <a style=" font-weight:400;color:rgb(201, 198, 198)">. 2021.1 songs,3 min 25 sec.</a>
+        </div>
+    </div>
+    <div class="work">
+        <div class="stuff"><i class="fa hie fa-play-circle" style="font-size:85px; "
+                id="play0"></i>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <div>&nbsp;&nbsp;<i id="heart" class="fa fa-heart-o fa-2x"></i>&nbsp;&nbsp;</div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div><i class="material-icons" style="color:rgb(39, 39, 39);"></i>. . . </div>
+        </div> <br>
+
+        <a style="font-size: 15px;padding:10px;"># Title</a>
+        <hr>
+        <div class="song">
+            <div>1</div>
+
+            <div>
+                <a style="font-weight: 500; font-size: large;">Top Tucker</a><br>
+                <a href="anirudh.html" style="color:rgb(155, 154, 154); font-weight: 500;">
+                Yuvan Shankar Raja,</a>
+                    <a href="badshah.html" style="color:rgb(155, 154, 154); font-weight: 500;">
+                        Badshah</a><audio id="andhakanna" src="toptucker.mp3"></audio>
+            </div>
+            <div>14,699,528</div>
+            <div id="current_time1">3:25</div>
+            <div><i class="fa play fa-play-circle fa-3x" id="play1"></i></div>
+            <div class="progressbar" id="progress1">
+                <div class="progress" id="progressed1"></div>
+            </div>
+
+        </div>
+        <br><br><br><br>
+        <br>
+        @2020 Sagar Devendra Private Limited
+        <br>
+        <div class="cate"><a style="font-size: 25px; font-weight: 700;">More By Yuvan Shankar Raja</a>
+            <a style="font-size: 18px; color:rgb(161, 161, 161)" href="yuvan.html">SEE ALL</a>
+        </div>
+
+        <div class="sub1">
+
+            <div class="collection">
+                <div><img class="imagesinfo" style="padding-right:50px;" src="andhakanna.jpg"
+                            width="175">
+                        <p style="font-weight: 700; font-size: 19px;"><a href="master.html">Andha Kanna..</a></p>
+                        <a style="font-weight: lighter; font-size: 17px;">2021</a>
+                </div></a>
+            </div>
+            <div class="collection">
+                <div><a href="maari2.html"><img class="" style="padding-right:50px" src="rowdybaby.jpg" width="175"></a>
+                    <p style="font-weight: 700; font-size: 19px;">Rowdy Baby</p>
+                    <p style="font-weight: lighter; font-size: 17px;">2018</p>
+                </div>
+            </div>
+            <div class="collection">
+                <div> <a href="yaaradi.html"><img style="padding-right:50px" class="" src="enkeyoo.jpg" width="175">
+                        <p style="font-weight: 700; font-size: 19px;">Venmegam</p>
+                        <a style="font-weight: lighter; font-size: 17px;">2008</a>
+                </div></a>
+            </div>
+            <div class="collection">
+                <div> <a href="maari2.html"><img class="" src="rowdybaby.jpg" width="180"></a>
+                    <p style="font-weight: 700; font-size: 19px;">Maari Gethu</p>
+                    <a style="font-weight: lighter; font-size: 17px;">2018</a>
+                </div>
+            </div>
+            <div class="collection">
+                <div> <a href="ppk.html"><img class="" style="padding-right:50px" src="ppk.jpg" width="175"></a>
+                    <p style="font-weight: 700; font-size: 19px;">High On Love</p>
+                    <a style="font-weight: lighter; font-size: 17px;">2018</a>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <script>
+
+            const music1 = document.querySelector("#andhakanna");
+            const play1 = document.getElementById("play1");
+
+
+            let isPlaying1 = true;
+            const playMusic1 = () => {
+                isPlaying1 = false;
+                music1.play();
+                play1.classList.replace("fa-play-circle", "fa-pause-circle");
+                play0.classList.replace("fa-play-circle", "fa-pause-circle");
+            };
+            const pauseMusic1 = () => {
+                isPlaying1 = true;
+                music1.pause();
+                play1.classList.replace("fa-pause-circle", "fa-play-circle");
+                play0.classList.replace("fa-pause-circle", "fa-play-circle");
+            };
+            play1.addEventListener("click", () => {
+                isPlaying1 ? playMusic1() : pauseMusic1();
+            });
+            play0.addEventListener("click", () => {
+                isPlaying1 ? playMusic1() : pauseMusic1();
+            });
+
+
+
+
+            var progressed1 = document.getElementById("progressed1");
+            music1.ontimeupdate = function (e) {
+                progressed1.style.width = Math.floor(music1.currentTime * 100 / music1.duration) + "%";
+            };
+
+            var progress1 = document.getElementById("progress1");
+            progress1.onclick = function (e) {
+                music1.currentTime = ((e.offsetX / progress1.offsetWidth) * music1.duration)
+            }
+
+
+
+            music1.addEventListener("timeupdate", (event) => {
+                const { currentTime, duration } = event.srcElement;
+                let min_currentTime = Math.floor(currentTime / 60);
+                let sec_currentTime = Math.floor(currentTime % 60);
+                current_time1.textContent = `${min_currentTime}:${sec_currentTime}`;
+            });
+            const endmusic1 = () => {
+                play1.classList.replace("fa-pause-circle", "fa-play-circle");
+                play0.classList.replace("fa-pause-circle", "fa-play-circle");
+               
+            }
+
+            music1.addEventListener("ended", endmusic1);
+            const heart = document.getElementById("heart");
+            const heartColor = () => {
+                heartFull = false;
+                heart.classList.replace("fa-heart-o", "fa-heart");
+            };
+            const heartUncolor = () => {
+                heartFull = true;
+                heart.classList.replace("fa-heart", "fa-heart-o");
+
+            };
+            let heartFull = true;
+
+            heart.addEventListener("click", () => {
+                heartFull ? heartColor() : heartUncolor();
+            });
+        </script>
+</body>
+
+</html>
